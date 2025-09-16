@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0b0c">
+    <title>Vlad · Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+        <div class="container header-inner">
+            <a href="#top" class="logo" aria-label="Home">
+                <span class="logo-mark">⟡</span>
+                <span class="logo-text">Vlad</span>
+            </a>
+            <nav class="nav" aria-label="Primary">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#work">Work</a></li>
+                    
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="btn btn-primary btn-small" href="#contact">Hire me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero section" aria-label="Hero">
+            <div class="container grid-2">
+                <div class="hero-text reveal-up">
+                    <p class="pill">Frontend Developer · HTML · CSS · JavaScript</p>
+                    <h1>Hi, I'm Vlad — I'm a frontend developer</h1>
+                    <p class="lead">I’m a mid‑level frontend developer focused on neat UI, responsive layouts, and smooth interactions. Not senior yet — just honest craft and attention to detail.</p>
+                    <div class="actions">
+                        <a href="#work" class="btn btn-primary">View my work</a>
+                        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+                    </div>
+                    <ul class="trust-list" aria-label="Technologies">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="hero-media reveal-up">
+                    <div class="hero-card">
+                        <div class="glow"></div>
+                        <img src="/img/d81f1f2fd98e2a4bdd71c6a8c3eecb39.jpg" alt="Owl at night" decoding="async">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-orb orb-1"></div>
+            <div class="bg-orb orb-2"></div>
+        </section>
+
+        <section id="work" class="section" aria-label="Selected work">
+            <div class="container section-header reveal-up">
+                <h2>Featured Projects</h2>
+                <p class="muted">Some of my work — focused on clean layout, accessibility, and performance.</p>
+            </div>
+
+            <div class="container projects-grid">
+                <article class="project-card reveal-up">
+                    <a class="card-inner" href="#" target="_blank" rel="noopener" aria-label="Open project">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop" alt="Project screenshot" loading="lazy" decoding="async">
+                        <div class="card-content">
+                            <h3>Project One</h3>
+                            <p>High‑end landing page with micro‑interactions and stunning layout.</p>
+                            <span class="tags">React · Framer Motion · SCSS</span>
+                        </div>
+                    </a>
+                </article>
+                <article class="project-card reveal-up">
+                    <a class="card-inner" href="#" target="_blank" rel="noopener" aria-label="Open project">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1400&auto=format&fit=crop" alt="Project screenshot" loading="lazy" decoding="async">
+                        <div class="card-content">
+                            <h3>Project Two</h3>
+                            <p>Dashboard experience with dark theme and buttery animations.</p>
+                            <span class="tags">Next.js · Tailwind · Chart.js</span>
+                        </div>
+                    </a>
+                </article>
+                <article class="project-card reveal-up">
+                    <a class="card-inner" href="#" target="_blank" rel="noopener" aria-label="Open project">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop" alt="Project screenshot" loading="lazy" decoding="async">
+                        <div class="card-content">
+                            <h3>Project Three</h3>
+                            <p>E‑commerce concept with emphasis on speed, clarity, and UX.</p>
+                            <span class="tags">Vite · TypeScript · Stripe</span>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        
+
+        <section id="skills" class="section" aria-label="Skills">
+            <div class="container section-header reveal-up">
+                <h2>Skills</h2>
+                <p class="muted">What I use right now to build websites.</p>
+            </div>
+            <div class="container skills-grid">
+                <div class="skill reveal-up">
+                    <h3>Core</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section" aria-label="Contact">
+            <div class="container contact-card reveal-up">
+                <h2>Let’s work together</h2>
+                <p class="muted">Tell me about your idea — I’ll reply soon.</p>
+                <form class="contact-form" name="contact" netlify>
+                    <div class="form-grid">
+                        <label>
+                            <span>Name</span>
+                            <input type="text" name="name" placeholder="Your name" required>
+                        </label>
+                        <label>
+                            <span>Email</span>
+                            <input type="email" name="email" placeholder="you@example.com" required>
+                        </label>
+                        <label class="full">
+                            <span>Message</span>
+                            <textarea name="message" rows="4" placeholder="What are you building?" required></textarea>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Vlad. All rights reserved.</p>
+            <div class="socials">
+                <a href="#" aria-label="GitHub">GH</a>
+                <a href="#" aria-label="LinkedIn">IN</a>
+                <a href="#" aria-label="Twitter">TW</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
